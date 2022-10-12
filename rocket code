@@ -1,0 +1,81 @@
+
+def main():
+    endcalculation = 2
+    while (endcalculation > 1):
+
+        print('Choose rocket calulation to do [press the corresponding number then press enter]')
+        print('1 acceleration')
+        print('2 mass')
+        print('3 force')
+        print('4 vertical distace [x coordinate]')
+        print('4.5 vertical distace [y coodinate]')
+        print('5 vertical distace [x coordinate]')
+        print('5.5 vertical distace [y coodinate]')
+        print('''6 done with code
+        ''')
+
+        # sys.exit
+        operation = input()
+
+        if operation == "1":
+            num1 = input("""Enter the rockets force:""")
+            num2 = input("Enter the rockets mass: ")
+            print("""the acceleration is """ + str(int(num1) / int(num2)) + (""" 
+
+            """))
+
+        elif operation == "2":
+            num1 = input("Enter the rockets force: ")
+            num2 = input("Enter the rockets acceleration: ")
+            print("the rockets mass is " + str(int(num1) * int(num2)) + (""" 
+
+            """))
+
+        elif operation == "3":
+            num1 = input("Enter the rockets mass: ")
+            num2 = input("Enter the rockets acceleration: ")
+            print("the rockets force is " + str(int(num1) * int(num2)) + (""" 
+
+            """))
+
+        elif operation == "4":
+            num1 = input("r1 (starting position): ")
+            num2 = input("r2 (final position): ")
+            print("the x coordinate is " + str(int(num1) - int(num2)) + (""" 
+
+            """))
+
+        elif operation == "4.5":
+            num1 = input("r1 (starting position): ")
+            num2 = input("r2 (final position): ")
+            print("the y coordinate is " + str(int(num1) / int(num2)) + (""" 
+
+            """))
+
+        elif operation == "5":
+            num1 = input("r1 (starting position): ")
+            num2 = input("r2 (final position): ")
+            print("the x coordinate is " + str(int(num1) / int(num2)) + (""" 
+
+            """))
+
+        elif operation == "5.5":
+            num1 = input("r1 (starting position): ")
+            num2 = input("r2 (final position): ")
+            print("the y coordinate is " + str(int(num1) - int(num2)) + (""" 
+
+            """))
+
+        elif operation == "8":
+            print('''
+            code ended''')
+            endcalculation = 0
+
+        else:
+            print("""invalid entry
+
+          """)
+
+
+if __name__ == '__main__':
+    main()
