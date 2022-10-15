@@ -11,7 +11,8 @@ def main():
         print('4.5 vertical distace [y coodinate]')
         print('5 vertical distace [x coordinate]')
         print('5.5 vertical distace [y coodinate]')
-        print('''6 done with code
+        print('6 velocity')
+        print('''7 done with code
         ''')
 
         # sys.exit
@@ -66,7 +67,14 @@ def main():
 
             """))
 
-        elif operation == "8":
+        elif operation == "6":
+            num1 = input("enter distance"): ")
+            num2 = input("enter time): ")
+            print("the velocity is " + str(int(num1) / int(num2)) + (""" 
+
+            """))
+
+        elif operation == "7":
             print('''
             code ended''')
             endcalculation = 0
